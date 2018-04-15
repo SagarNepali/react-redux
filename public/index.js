@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from '../src/components/App.jsx';
+import BankAppContainer from '../src/components/BankAppContainer';
 import './style.css';
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(<BankAppContainer/>, document.getElementById('root'));
 
 
