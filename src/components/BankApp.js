@@ -1,7 +1,7 @@
 /* 
 
 */
-import React, {Component , PropTypes } from 'react';
+import React, {Component , propTypes } from 'react';
 import bankStore from './../store/bankStore';
 import constants from './../utils/constants';
 
@@ -36,7 +36,7 @@ export default class BankApp extends Component{
 	}
 
 	BankApp.propTypes = {
-		//balance: PropTypes.number,
-		/*onDeposit: PropTypes.func,
-		onWithdraw: PropTypes.func*/
+		/*balance: propTypes.number,
+		onDeposit: propTypes.func,
+		onWithdraw: propTypes.func*/
 	}

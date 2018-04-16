@@ -4,13 +4,10 @@ const initialState = {
 	balance :0
 } 
 
-const bankReducer = (state,action) => {
-	console.log(action)
-
+const bankReducer = (state = initialState,action) => {
+	
 	switch(action.type){
-		case constants.CREATE_ACCOUNT:
-			return initialState;
-
+		
 		case constants.DEPOSIT_INTO_ACCOUNT:
 			return { balance: state.balance + parseFloat(action.amount)};
 
@@ -19,7 +16,7 @@ const bankReducer = (state,action) => {
 
 
 		default:
-			return initialState;
+			return state;
 
 
 	}
