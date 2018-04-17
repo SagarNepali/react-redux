@@ -30,6 +30,17 @@ export default class BankApp extends Component{
 						<button onClick={this.handleWithdraw.bind(this)}>Withdraw</button>
 						<button onClick={this.handleDeposit.bind(this)}>Deposit</button>
 					</div>
+					<div className="exchange" onClick={this.props.onToggle}>
+						<strong>Exchange Rates:</strong>
+						<div className={this.props.showExchange? 'exchange--visible' : 'exchange--closed'}>
+							<strong>$1 USD =</strong>
+							<span className="rate">0.9990 EUR</span>
+							<span className="rate">0.7989 GBP</span>
+							<span className="rate">710.15 JPY</span>
+						</div>
+					</div>
+
+
 				</div>
 			);
 		}

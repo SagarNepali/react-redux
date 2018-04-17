@@ -17,6 +17,13 @@ const bankActionCreator = {
 			type: constants.DEPOSIT_INTO_ACCOUNT,
 			amount:amount
 		};
+	},
+
+	toggleInfo(){
+
+		return {
+			type: constants.TOGGLE_INFO
+		};
 	}
 }
 
